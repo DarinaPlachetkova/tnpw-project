@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Salicylic Acid 2% Masque</title>
+        <link rel="stylesheet" href="product-detail.css" type="text/css" />
+        <link rel="stylesheet" href="navbar.css" type="text/css" />
+        <link rel="stylesheet" href="footer.css" type="text/css" />
+        <link rel="stylesheet" href="main.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header-menu">
+            <nav class="topnav">
+                <a href="index.html">Homepage</a>
+                <a href="products.html" class="active">Products</a>
+                <a href="tools.html">Tools</a>
+                <a href="contact.html">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="showMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+        </header>
+        <article class="row box"> 
+            <section class="section-two">
+                <h1>Salicylic Acid 2% Masque</h1>
+                <div class="text-about">
+                    <p>The structure of salicylic acid facilitates its lipophilicity and miscibility with the lipids located on the surface of the skin. It is a suitable ingredient for targeting the removal of dead skin cells on the surface of oily and blemish-prone skin, with the purpose of revealing more radiant skin beneath. Charcoal and clays are ingredients renowned for their deep cleansing abilities due to their porosity and large surface area available for adsorption.</p>
+                    <p>While exfoliating acids can result in quick visible benefits, we generally suggest the use of indirect forms of skin exfoliation in favour of direct forms such as this formula due to potential inflammation and sensitivity associated with acids.</p>
+                    <h3>Ingredients</h3>
+                    <p style="margin-top: -20px;">Aqua (Water), Kaolin, Squalane, Glycerin, Dimethyl Isosorbide, Silica Cetyl Silylate, Salicylic Acid, Sodium Polyacrylate, Pentylene Glycol, Charcoal Powder, 4-T-Butylcyclohexanol, Sclerotium Gum, Acacia Senegal Gum, Xanthan Gum, Phytic Acid, Polysorbate 20, Trisodium Ethylenediamine Disuccinate, Chlorphenesin, Phenoxyethanol.</p>
+                    <h3>Where you can buy?</h3>
+                    <p class="p-can-buy">You can buy this product online at:</p>
+                    <ul>
+                        <li><a href="https://deciem.com/en-cz/theordinary/mas-rdn-salicylic-acid-2pct-masque.html?dwvar_mas-rdn-salicylic-acid-2pct-masque_size=50ml&quantity=1" target="_blank">Deciem - $10.71</a></li>
+                        <li><a href="https://www.sephora.com/product/the-ordinary-salicylic-acid-2-masque-P448530" target="_blank">Sephora - $12.00</a></li> 
+                        <li><a href="https://makeup.cz/product/549799/?gclid=CjwKCAiA1aiMBhAUEiwACw25Mffas_y4Di7ANG6yzDMShDwxopvumgiGs_m6gAWrs33i5y9413NOQBoCyEcQAvD_BwE" target="_blank">Makeup - $22.05</a></li>
+                    </ul>
+                </div>
+                <div class=""></div>
+            </section>
+            <section class="section-one">
+                <div class="div-img">
+                    <img class="img-product" src="obrazky/masque-1.jpg"  alt="salicylic-masque" onclick="myFunction(this);">
+                    <img class="img-product" src="obrazky/masque-2.jpg" alt="salicylic-masque" onclick="myFunction(this);">
+                    <img class="img-product" src="obrazky/masque-3.jpg" alt="salicylic-masque" onclick="myFunction(this);">
+                    <img class="img-product" src="obrazky/masque-4.jpg" alt="salicylic-masque" onclick="myFunction(this);">
+                </div>
+                <div class="container">
+                    <img alt="salicylic-masque" src="obrazky/masque-1.jpg" id="expandedImg">
+                </div>
+                <script>
+                    function myFunction(imgs) {
+                    var expandImg = document.getElementById("expandedImg");
+                    expandImg.src = imgs.src;
+                    expandImg.parentElement.style.display = "block";
+                  }
+                </script>
+            </section>
+        </article>
+        <footer>
+            <div class="about-icons">
+                <a href="https://www.instagram.com/darina_plachetkova/" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://twitter.com/darinkaaap" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com/darina.plachetkova/" target="_blank"><i class="fa fa-facebook-square"></i></a>
+            </div>
+            <div class="made-by-div">
+                Made by &copy;Darina 10.12.2021
+            </div>
+            <div class="footer-content">
+                Student credit project <a href = "mailto: plachda1@uhk.cz">plachda1@uhk.cz</a>
+            </div>
+        </footer>
+    </body>
+    <script>
+        function showMenu() {
+            var x = document.getElementsByClassName("topnav");
+            if (x[0].className === "topnav") {
+                x[0].className += " responsive";
+            } else {
+                x[0].className = "topnav";
+            }
+        }
+    </script>
+</html>

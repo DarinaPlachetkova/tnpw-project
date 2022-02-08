@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <title>Contact</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="contact.css" type="text/css" />
+        <link rel="stylesheet" href="navbar.css" type="text/css" />
+        <link rel="stylesheet" href="footer.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header-menu">
+            <nav class="topnav">
+                <a href="index.html">Homepage</a>
+                <a href="products.html">Products</a>
+                <a href="tools.html">Tools</a>
+                <a href="contact.html" class="active">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="showMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+        </header>
+        <article class="article">
+                <div class="box">
+                    <section class="section-one">
+                        <div class="icon-div">
+                            <i class="fa fa-map-marker"></i>
+                            <p>Hradec Králové</p>
+                        </div>
+                        <div class="icon-div">
+                            <i class="fa fa-phone"></i>
+                            <p>+420739720071</p>
+                        </div>
+                        <div class="icon-div">
+                            <i class="fa fa-envelope"></i>
+                            <p>darinaa.plachetkova@gmail.com</p>
+                        </div>
+                        <div class="icon-div"> 
+                            <i class="fa fa-globe"></i>
+                            <p>Web: <a href="index.html">Here</a></p>
+                        </div>
+                    </section>
+                    <form class="contact-form">
+                        <h2 class="underline">Contact form</h2>
+                        <div class="form-box">
+                            <div class="form-row">
+                                <label for="fname">Full name</label><br>
+                                <input type="text" class="fname" name="fname" placeholder="Your full name..."><br>
+                            </div>
+                            <div class="form-row" style="margin-top: 3%;">
+                                <label for="lname">Subject</label><br>
+                                <input type="text" class="fname" name="lname" placeholder="Subject...">
+                            </div>
+                            <div class="form-row" style="margin-top: 3%;">
+                                <label class="form-email-adres" for="fname">Email adress</label><br>
+                                <input type="text" class="fname" name="fname" placeholder="Your email adress..."><br>
+                            </div>
+                            <div class="form-row"style="margin-top: 3%;">
+                                <label for="lname">Message</label><br>
+                                <textarea type="text" class="fname-message" name="lname"></textarea>
+                                <div class="btn-div">
+                                    <button type="button" class="btn-send" onclick="sendMessage()">Send message</button>
+                                </div>
+                            </div>  
+                        </div>
+                    </form>
+                </div>
+        </article>
+        <footer>
+            <div class="about-icons">
+                <a href="https://www.instagram.com/darina_plachetkova/" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://twitter.com/darinkaaap" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com/darina.plachetkova/" target="_blank"><i class="fa fa-facebook-square"></i></a>
+            </div>
+            <div class="made-by-div">
+                Made by &copy;Darina 10.12.2021
+            </div>
+            <div class="footer-content">
+                Student credit project <a href = "mailto: plachda1@uhk.cz">plachda1@uhk.cz</a>
+            </div>
+        </footer>
+    </body>
+    <script>
+        function showMenu() {
+            var x = document.getElementsByClassName("topnav");
+            if (x[0].className === "topnav") {
+                x[0].className += " responsive";
+            } else {
+                x[0].className = "topnav";
+            }
+        }
+         function sendMessage() {
+             alert('The message was sent');
+         }
+    </script>
+</html>

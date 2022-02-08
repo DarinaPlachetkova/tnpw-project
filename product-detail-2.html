@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Niacinamide 10% + Zinc 1%</title>
+        <link rel="stylesheet" href="product-detail.css" type="text/css" />
+        <link rel="stylesheet" href="navbar.css" type="text/css" />
+        <link rel="stylesheet" href="footer.css" type="text/css" />
+        <link rel="stylesheet" href="main.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header-menu">
+            <nav class="topnav">
+                <a href="index.html">Homepage</a>
+                <a href="products.html" class="active">Products</a>
+                <a href="tools.html">Tools</a>
+                <a href="contact.html">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="showMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+        </header>
+        <article class="row box"> 
+            <section class="section-two">
+                <h1>Niacinamide 10% + Zinc 1%</h1>
+                <div class="text-about">
+                    <p>While Niacinamide and Zinc PCA reduce the look of blemishes and balance visible sebum activity, neither is a treatment for acne. For persistent acne-related conditions, we recommend the use of Benzoyl Peroxide and/or Retinoic Acid. DECIEM doesn't recommend ongoing use of BHA such as Salicylic Acid for persistent blemishes. For temporary improvement in appearance of blemishes, Salicylic Acid would help. This formulation can be used alongside acne treatments if desired for added visible skin benefits</p>
+                    <p>Independent studies suggest Niacinamide is also an effective ingredient for brightening skin tone.</p>
+                    <h3>Ingredients</h3>
+                    <p style="margin-top: -20px;">Aqua (Water), Niacinamide, Pentylene Glycol, Zinc Pca, Dimethyl Isosorbide, Tamarindus Indica Seed Gum, Xanthan Gum, Isoceteth-20, Ethoxydiglycol, Phenoxyethanol, Chlorphenesin.</p>
+                    <h3>Where you can buy?</h3>
+                    <p class="p-can-buy">You can buy this product online at:</p>
+                    <ul>
+                        <li><a href="https://deciem.com/en-cz/theordinary/mas-rdn-niacinamide-10pct-zinc-1pct.html?dwvar_mas-rdn-niacinamide-10pct-zinc-1pct_size=30ml&quantity=1" target="_blank">Deciem - $5.25</a></li>
+                        <li><a href="https://www.sephora.com/product/the-ordinary-deciem-niacinamide-10-zinc-1-P427417" target="_blank">Sephora - $5.90</a></li> 
+                        <li><a href="https://www.douglas.cz/p/the-ordinary-niacinamide-10-zinc-1-015520?number=015520&gclid=Cj0KCQiA-K2MBhC-ARIsAMtLKRslLw2yb_rJAtHVMog2QXgcw3rLDNPW0zi7h_EwPC8LlzNHBvA-LYcaAmIREALw_wcB" target="_blank">Douglas - $7.76</a></li>
+                    </ul>
+                </div>
+                <div class=""></div>
+            </section>
+            <section class="section-one">
+                <div class="div-img">
+                    <img class="img-product" src="obrazky/niacinamide-1.jpg"  alt="niacinamide-serum" onclick="myFunction(this);">
+                    <img class="img-product" src="obrazky/niacinamide-2.png" alt="niacinamide-serum" onclick="myFunction(this);">
+                    <img class="img-product" src="obrazky/niacinamide-3.png" aalt="niacinamide-serum" onclick="myFunction(this);">
+                    <img class="img-product" src="obrazky/niacinamide-4.jpg" alt="niacinamide-serum" onclick="myFunction(this);">
+                </div>
+                <div class="container">
+                    <img alt="niacinamide-serum" src="obrazky/niacinamide-1.jpg" id="expandedImg">
+                </div>
+                <script>
+                    function myFunction(imgs) {
+                    var expandImg = document.getElementById("expandedImg");
+                    expandImg.src = imgs.src;
+                    expandImg.parentElement.style.display = "block";
+                  }
+                </script>
+            </section>
+        </article>
+        <footer>
+            <div class="about-icons">
+                <a href="https://www.instagram.com/darina_plachetkova/" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://twitter.com/darinkaaap" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com/darina.plachetkova/" target="_blank"><i class="fa fa-facebook-square"></i></a>
+            </div>
+            <div class="made-by-div">
+                Made by &copy;Darina 10.12.2021
+            </div>
+            <div class="footer-content">
+                Student credit project <a href = "mailto: plachda1@uhk.cz">plachda1@uhk.cz</a>
+            </div>
+        </footer>
+    </body>
+    <script>
+        function showMenu() {
+            var x = document.getElementsByClassName("topnav");
+            if (x[0].className === "topnav") {
+                x[0].className += " responsive";
+            } else {
+                x[0].className = "topnav";
+            }
+        }
+    </script>
+</html>

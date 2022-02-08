@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SA Smoothing Cleanser</title>
+        <link rel="stylesheet" href="product-detail.css" type="text/css" />
+        <link rel="stylesheet" href="navbar.css" type="text/css" />
+        <link rel="stylesheet" href="footer.css" type="text/css" />
+        <link rel="stylesheet" href="main.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header-menu">
+            <nav class="topnav">
+                <a href="index.html">Homepage</a>
+                <a href="products.html" class="active">Products</a>
+                <a href="tools.html">Tools</a>
+                <a href="contact.html">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="showMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+        </header>
+        <article class="row box"> 
+            <section class="section-two">
+                <h1>SA Smoothing Cleanser</h1>
+                <div class="text-about">
+                    <p>CeraVe Renewing SA Cleanser provides gentle, non-irritating exfoliation without harsh microbeads that can scratch your skin. Suitable for use on your face and body as well as acne-prone skin, our salicylic acid cleanser not only exfoliates the skin, but with three essential ceramides, hyaluronic acid and niacinamide, it also helps soften and smooth the skin without disrupting its protective barrier. This formula is also non-comedogenic, fragrance-free and enriched with antioxidant vitamin D.</p>
+                    <p>A gentle salicylic acid cleanser can help exfoliate and smooth your skin while also effectively removing oil and dirt, sweeping away dead cells, and softening rough skin—without leaving skin feeling dry. Cleansing with CeraVe Renewing SA Cleanser, a salicylic acid cleanser enhanced with barrier-restoring ingredients like ceramides, can help keep moisture in while keeping irritants out.</p>
+                    <h3>Ingredients</h3>
+                    <p style="margin-top: -20px;">Aqua/Water/EAU, Cocamidopropyl hydroxysultaine, glycerin, sodium Lauroyl sarcosinate, niacinamide, gliconolactone, PEG-150 pentaerythrityl tetrastearate, sodium methyl cocoyl taurate, zea mays oil/corn oil, ceramide NP, ceramide AP, ceramide EOP, carbomer, calcium gluconate, sodium chloride, salicylic acid, sodium benzoate, sodium lauroyl lactylate, cholecalciferol, cholesterol, pjenoxyethanol, disodium EDTA, tetrasodium EDTA, hydrolyzed hyaluronic acid, phytosphingosine, xanthan gum, ethylhexylglycerin.</p>
+                    <h3>Where you can buy?</h3>
+                    <p class="p-can-buy">You can buy this product online at:</p>
+                    <ul>
+                        <li><a href="https://www.notino.cz/cerave/sa-cistici-a-zjemnujici-emulze-pro-normalni-a-suchou-pokozku/p-15992945/?gclid=CjwKCAiA1aiMBhAUEiwACw25MWgLfzujrxvwqp1eOcqZIkHAXViGiCYBmNXE3VfpSD5Ve23gwQ4I0xoCZR8QAvD_BwE " target="_blank">Notino - $11.90</a></li>
+                        <li><a href="https://www.drmax.cz/cerave-zjemnujici-cistici-emulze-236-ml?gclid=CjwKCAiA1aiMBhAUEiwACw25Mfb37u6ADKmspeIbE6KH59zaTNMXzEwykW1CAXIlWK5GAu2fJ5VkihoCXeQQAvD_BwE" target="_blank">Dr.Max - $12.18</a></li> 
+                        <li><a href="https://www.pilulka.cz/cerave-zjemnujici-cistici-emulze-236-ml?gclid=CjwKCAiA1aiMBhAUEiwACw25MZuoa4pXUFoOPSCNjUt9cnAXlbFmdngPKEn9U0R8D3ZiT3VJAFpHqBoC2jEQAvD_BwE" target="_blank">Pilulka - $11.90</a></li>
+                    </ul>
+                </div>
+                <div class=""></div>
+            </section>
+            <section class="section-one">
+                <div class="div-img">
+                    <img class="img-product" src="obrazky/cleanser-1.jpeg"  alt="cleanser" onclick="myFunction(this);">
+                    <img class="img-product" src="obrazky/cleanser-2.jpg" alt="cleanser" onclick="myFunction(this);">
+                    <img class="img-product" src="obrazky/cleanser-3.jpg" alt="cleanser" onclick="myFunction(this);">
+                    <img class="img-product" src="obrazky/cleanser-4.jpg" alt="cleanser" onclick="myFunction(this);">
+                </div>      
+                <div class="container">
+                    <img alt="cleanser" src="obrazky/cleanser-1.jpeg" id="expandedImg">
+                </div>
+                <script>
+                    function myFunction(imgs) {
+                    var expandImg = document.getElementById("expandedImg");
+                    expandImg.src = imgs.src;
+                    expandImg.parentElement.style.display = "block";
+                  }
+                </script>
+            </section>
+        </article>
+            <footer>
+                <div class="about-icons">
+                    <a href="https://www.instagram.com/darina_plachetkova/" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="https://twitter.com/darinkaaap" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/darina.plachetkova/" target="_blank"><i class="fa fa-facebook-square"></i></a>
+                </div>
+                <div class="made-by-div">
+                    Made by &copy;Darina 10.12.2021
+                </div>
+                <div class="footer-content">
+                    Student credit project <a href = "mailto: plachda1@uhk.cz">plachda1@uhk.cz</a>
+                </div>
+            </footer>
+    </body>
+    <script>
+        function showMenu() {
+            var x = document.getElementsByClassName("topnav");
+            if (x[0].className === "topnav") {
+                x[0].className += " responsive";
+            } else {
+                x[0].className = "topnav";
+            }
+        }
+    </script>
+</html>

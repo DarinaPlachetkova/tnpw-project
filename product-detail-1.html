@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aha 30% + Bha 2% Peeling Solution</title>
+        <link rel="stylesheet" href="navbar.css" type="text/css" />
+        <link rel="stylesheet" href="footer.css" type="text/css" />
+        <link rel="stylesheet" href="product-detail.css" type="text/css" />
+        <link rel="stylesheet" href="main.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header-menu">
+            <nav class="topnav">
+                <a href="index.html">Homepage</a>
+                <a href="products.html" class="active">Products</a>
+                <a href="tools.html">Tools</a>
+                <a href="contact.html">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="showMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+        </header>
+        <article class="row box">
+            <section class="section-two">
+                <h1>AHA 30% + BHA 2% Peeling Solution</h1>
+                <div class="text-about">
+                    <p>This formula contains a studied Tasmanian Pepperberry derivative to help reduce irritation associated with acid use. This derivative is of plant origin and varies in colour seasonally and this colour variation may be apparent in the formula from time to time. This formula is further supported with a crosspolymer form of hyaluronic acid for comfort, Vitamin B5 to assist healing and black carrot as an antioxidant.</p>
+                    <p>This product contains an alpha hydroxy acid (AHA) and a beta hydroxy acid (BHA) that may increase your skin's sensitivity to the sun and particularly the possibility of sunburn. Use a sunscreen, wear protective clothing, and limit sun exposure while using this product and for a week afterwards.</p>
+                    <h3>Ingredients</h3>
+                    <p style="margin-top: -20px;">Glycolic Acid, Aqua (Water), Aloe Barbadensis Leaf Water, Sodium Hydroxide, Daucus Carota Sativa Extract, Propanediol, Cocamidopropyl Dimethylamine, Salicylic Acid, Lactic Acid, Tartaric Acid, Citric Acid, Panthenol, Sodium Hyaluronate Crosspolymer, Tasmannia Lanceolata Fruit/Leaf Extract, Glycerin, Pentylene Glycol, Xanthan Gum, Polysorbate 20, Trisodium Ethylenediamine Disuccinate, Potassium Sorbate, Sodium Benzoate, Ethylhexylglycerin, 1,2-Hexanediol, Caprylyl Glycol.</p>
+                    <h3>Where you can buy?</h3>
+                    <p class="p-can-buy">You can buy this product online at:</p>
+                    <ul>
+                        <li><a href="https://deciem.com/en-cz/theordinary/mas-rdn-aha-30pct-bha-2pct-peeling-solution.html?dwvar_mas-rdn-aha-30pct-bha-2pct-peeling-solution_size=30ml&quantity=1" target="_blank">Deciem - $6.42</a></li>
+                        <li><a href="https://www.sephora.com/product/aha-30-bha-2-peeling-solution-P442563" target="_blank">Sephora - $7.20</a></li> 
+                        <li><a href="https://www.douglas.cz/p/the-ordinary-aha-30-bha-2-peeling-solution-015557?number=015557&gclid=CjwKCAiA1aiMBhAUEiwACw25MZ4NreYkTImF9Y0oaHlOGhGSldgFvg3usBF5-t1WRFZz1pTcxNIWgxoCm-cQAvD_BwE" target="_blank">Douglas - $8.68</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section-one">
+                <div class="div-img">
+                    <img class="img-product" src="obrazky/ahabha-1.jpg"  alt="aha-bha-peeling" onclick="myFunction(this);" />
+                    <img class="img-product" src="obrazky/ahabha-3.jpg" alt="aha-bha-peeling" onclick="myFunction(this);" />
+                    <img class="img-product" src="obrazky/ahabha-4.jpg" alt="aha-bha-peeling" onclick="myFunction(this);" />
+                    <img class="img-product" src="obrazky/ahabha-5.jpg" alt="aha-bha-peeling" onclick="myFunction(this);" />
+                </div>
+                <div class="container">
+                    <img alt="aha-bha-peeling" src="obrazky/ahabha-1.jpg" id="expandedImg">
+                </div>
+                <script>
+                    function myFunction(imgs) {
+                    var expandImg = document.getElementById("expandedImg");
+                    expandImg.src = imgs.src;
+                    expandImg.parentElement.style.display = "block";
+                }
+                </script>
+            </section>
+        </article>
+        <footer>
+            <div class="about-icons">
+                <a href="https://www.instagram.com/darina_plachetkova/" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://twitter.com/darinkaaap" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com/darina.plachetkova/" target="_blank"><i class="fa fa-facebook-square"></i></a>
+            </div>
+            <div class="made-by-div">
+                Made by &copy;Darina 10.12.2021
+            </div>
+            <div class="footer-content">
+                Student credit project <a href = "mailto: plachda1@uhk.cz">plachda1@uhk.cz</a>
+            </div>
+        </footer>
+    </body>
+    <script>
+        function showMenu() {
+            var x = document.getElementsByClassName("topnav");
+            if (x[0].className === "topnav") {
+                x[0].className += " responsive";
+            } else {
+                x[0].className = "topnav";
+            }
+        }
+    </script>
+</html>

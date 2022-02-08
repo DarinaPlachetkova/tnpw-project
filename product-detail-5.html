@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Natural Moisturizing Factors + HA</title>
+        <link rel="stylesheet" href="product-detail.css" type="text/css" />
+        <link rel="stylesheet" href="navbar.css" type="text/css" />
+        <link rel="stylesheet" href="footer.css" type="text/css" />
+        <link rel="stylesheet" href="main.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header-menu">
+            <nav class="topnav">
+                <a href="index.html">Homepage</a>
+                <a href="products.html" class="active">Products</a>
+                <a href="tools.html">Tools</a>
+                <a href="contact.html">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="showMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+        </header>
+        <article class="row box">             
+            <section class="section-two">
+                <h1>Natural Moisturizing Factors + HA</h1>
+                <div class="text-about">
+                    <p>This formula offers non-greasy hydration that acts as a direct topical supplement of impaired NMF components. It contains 11 amino acids, phospholipids, alpha/beta/gamma fatty acids, triglycerides, sterols and sterol esters, glycerin, ceramide precursors, urea, saccharides, sodium PCA and hyaluronic acid. It offers immediate hydration and lasting results with continued use.</p>
+                    <p>Natural Moisturizing Factors (NMF) are elements that keep the outer layer of the skin protected and well-hydrated.</p>
+                    <h3>Ingredients</h3>
+                    <p style="margin-top: -20px;">Aqua (Water), Caprylic/Capric Triglyceride, Cetyl Alcohol, Propanediol, Stearyl Alcohol, Glycerin, Sodium Hyaluronate, Arginine, Aspartic Acid, Glycine, Alanine, Serine, Valine, Isoleucine, Proline, Threonine, Histidine, Phenylalanine, Glucose, Maltose, Fructose, Trehalose, Sodium Pca, Pca, Sodium Lactate, Urea, Allantoin, Linoleic Acid, Oleic Acid, Phytosteryl Canola Glycerides, Palmitic Acid, Stearic Acid, Lecithin, Triolein, Tocopherol, Carbomer, Isoceteth-20, Polysorbate 60, Sodium Chloride, Citric Acid, Trisodium Ethylenediamine Disuccinate, Pentylene Glycol, Triethanolamine, Sodium Hydroxide, Phenoxyethanol, Chlorphenesin.</p>
+                    <h3>Where you can buy?</h3>
+                    <p class="p-can-buy">You can buy this product online at:</p>
+                    <ul>
+                        <li><a href="https://deciem.com/en-cz/theordinary/mas-rdn-natural-moisturizing-factors-ha.html?dwvar_mas-rdn-natural-moisturizing-factors-ha_size=30ml&quantity=1" target="_blank">Deciem - $5.17</a></li>
+                        <li><a href="https://www.sephora.com/product/the-ordinary-deciem-natural-moisturizing-factors-ha-P427414" target="_blank">Sephora - $5.80</a></li> 
+                        <li><a href="https://www.douglas.cz/p/the-ordinary-natural-moisturizing-factors-ha-015519?number=015519&gclid=Cj0KCQiA-K2MBhC-ARIsAMtLKRtwDmlBtb_iofd2BskwEYlcBF2P59Kj1eq7BxQ_Oy-GokViwceoFW0aAloEEALw_wcB" target="_blank">Douglas - $7.76</a></li>
+                    </ul>
+                </div>
+                <div class=""></div>
+            </section>
+            <section class="section-one">
+                <div class="div-img">
+                    <img class="img-product" src="obrazky/moisturizer-1.jpg"  alt="moisturizer" onclick="myFunction(this);">
+                    <img class="img-product" src="obrazky/moisturizer-2.jpg" alt="moisturizer" onclick="myFunction(this);">
+                    <img class="img-product" src="obrazky/moisturizer-3.jpg" alt="moisturizer" onclick="myFunction(this);">
+                    <img class="img-product" src="obrazky/moisturizer-4.jpg" alt="moisturizer" onclick="myFunction(this);">
+                </div>      
+                <div class="container">
+                    <img alt="moisturizer" src="obrazky/moisturizer-1.jpg" id="expandedImg">
+                </div>
+                <script>
+                    function myFunction(imgs) {
+                    var expandImg = document.getElementById("expandedImg");
+                    expandImg.src = imgs.src;
+                    expandImg.parentElement.style.display = "block";
+                  }
+                </script>
+            </section>
+        </article>
+        <footer>
+            <div class="about-icons">
+                <a href="https://www.instagram.com/darina_plachetkova/" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://twitter.com/darinkaaap" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com/darina.plachetkova/" target="_blank"><i class="fa fa-facebook-square"></i></a>
+            </div>
+            <div class="made-by-div">
+                Made by &copy;Darina 10.12.2021
+            </div>
+            <div class="footer-content">
+                Student credit project <a href = "mailto: plachda1@uhk.cz">plachda1@uhk.cz</a>
+            </div>
+        </footer>
+    </body>
+    <script>
+        function showMenu() {
+            var x = document.getElementsByClassName("topnav");
+            if (x[0].className === "topnav") {
+                x[0].className += " responsive";
+            } else {
+                x[0].className = "topnav";
+            }
+        }
+    </script>
+</html>
